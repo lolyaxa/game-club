@@ -1,0 +1,185 @@
+.Game {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.CharacterLeft {
+  position: absolute;
+  bottom: 7%;
+  animation: LeftCharacterSlideIn 1.5s;
+}
+
+.CharacterRight {
+  animation: Sosich 2.5s;
+  position: absolute;
+  right: 75px;
+  bottom: 20px;
+}
+
+.TextLeftContainer {
+  position: absolute;
+  top: 175px;
+  left: 265px;
+}
+
+.TextLeft {
+  background-color: rgba(245, 245, 245, 0.904);
+  animation: LeftTextSlideIn 1s;
+  width: 250px;
+
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px yellowgreen;
+}
+
+.ButtonContainer {
+  position: absolute;
+  top: 215px;
+  left: 265px;
+}
+
+.Button {
+  position: relative;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #f5a5cbcb;
+  width: 170px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #cd3232;
+}
+
+.TextRightContainer {
+  position: absolute;
+  top: 175px;
+  right: 340px;
+}
+
+.TextRight {
+  background-color: rgba(245, 245, 245, 0.904);
+  width: 250px;
+  animation: RightTextSlideIn 1s;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px red;
+}
+
+.Points {
+  right: 0;
+  top: -43px;
+  background-color: rgba(255, 255, 255, 0.63);
+  animation: RightTextSlideIn 1s;
+  position: absolute;
+  padding: 10px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 15px rgb(25, 6, 32);
+}
+
+.Price {
+  display: block;
+  right: 5px;
+  top: 10px;
+}
+
+.No {
+  background-color: rgba(255, 255, 255, 0.842);
+  text-align: center;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 15px;
+  height: 40px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 40px rgb(240, 7, 65);
+}
+
+.Popup {
+  background-color: rgba(255, 255, 255, 0.842);
+  text-align: center;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 15px;
+  height: 50px;
+  width: 180px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 40px rgb(240, 7, 65);
+}
+
+@media (max-width: 375px) {
+  .CharacterLeft {
+    left: -38%;
+    bottom: -1%;
+  }
+  .CharacterRight {
+    right: -30%;
+    bottom: 2%;
+  }
+  .TextRight {
+    width: 190px;
+    top: 35%;
+    right: 15%;
+  }
+  .TextLeft {
+    width: 190px;
+    top: 35%;
+    left: 18%;
+  }
+  .ButtonContainer {
+    top: 40%;
+    left: 20%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes LeftCharacterSlideIn {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes LeftTextSlideIn {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes RightTextSlideIn {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes Sosich {
+  0% {
+    transform: rotate(0deg) translateX(1000px);
+  }
+  50% {
+    transform: translateX(0px) rotate(50deg);
+  }
+  100% {
+    transform: rotate(-30deg) translateX(0px);
+  }
+}

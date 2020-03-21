@@ -1,0 +1,17 @@
+.Menu {
+  background-image: url(../../assets/zastavka.jpeg);
+  height: 100%;
+  background-size: cover;
+  background-position: top;
+}
+
+.MenuButton {
+  position: absolute;
+  left: 55%;
+  bottom: 25%;
+  height: 33%;
+  font-size: 30px;
+  box-shadow: 0 0 45px rgba(240, 216, 3, 0.952);
+  background-color: rgba(117, 64, 32, 0.856);
+  border-radius: 150%;
+}
